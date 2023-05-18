@@ -1,0 +1,125 @@
+:root {
+    --black: #1A1A1A;
+    --white: #F4F8FD;
+    --grey: #565B61;
+    --grey-blue: #334B6D;
+    --dark-blue: #2D3459;
+    --blue: #5577AA;
+    --light-blue: #D8E2EF;
+    --orange: #E6642F;
+    --light-orange: #EC946F;
+    --mango: #EB9526;
+    --banana: #EFB250;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background: var(--white);
+    color: var(--black);
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    background-color: var(--light-blue);
+    color: var(--black);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    resize: vertical;
+  }
+  
+  textarea:hover,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px var(--blue);
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: var(--dark-blue);
+  }
+  
+  .copy-btn {
+    margin-left: 10px;
+  }
+  
+  .replace-item {
+    margin-bottom: 5px;
+  }
+  
+  #mapping-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #mapping-table th,
+  #mapping-table td {
+    padding: 8px;
+    border-bottom: 1px solid var(--grey);
+  }
+  
+  #mapping-table th {
+    background-color: var(--light-blue);
+    font-weight: bold;
+  }
+  
+  #mapping-table td {
+    text-align: left;
+  }
+  
+  .alert {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--light-orange);
+    color: var(--black);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .alert.success {
+    background-color: var(--light-blue);
+    color: var(--black);
+  }
+  

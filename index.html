@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anonymization App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <img src="https://codewill.io/assets/images/logo_primary.png" style="max-width:200px;margin:auto" alt="CodeWill Logo">
+    <h1>Anonymization App</h1>
+
+    <div class="form-group">
+      <label for="text-input">Text Input</label>
+      <textarea id="text-input" rows="10"></textarea>
+    </div>
+    <div class="form-group">      
+        <div id="replace-list"></div>
+      </div>
+    <div class="form-group">
+        <button id="replace-btn">Replace Texts</button>        
+      </div>
+
+
+    <div class="form-group">
+      <label for="output">Output</label>
+      <p id="output"></p>
+      <button id="copy-output-btn" class="copy-btn">Copy</button>
+    </div>
+
+    <div class="form-group">
+      <label for="inverse-input">Inverse Replacement Input</label>
+      <textarea id="inverse-input" rows="10"></textarea>
+    </div>
+    <div class="form-group">
+        <button id="inverse-btn">Inverse Replace Texts</button>
+      </div>
+    
+
+    <div class="form-group">
+      <label for="inverse-output">Inverse Replacement Output</label>
+      <textarea id="inverse-output" rows="10" readonly></textarea>
+      <button id="copy-inverse-output-btn" class="copy-btn">Copy</button>
+    </div>    
+
+    
+
+    <div class="form-group">
+      <h3>Mapping Table</h3>
+      <table id="mapping-table">
+        <thead>
+          <tr>
+            <th>Substring</th>
+            <th>Random String</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
