@@ -27,6 +27,7 @@
   .container {
     width: 100%;
     max-width: 600px;
+    padding: 0 20px;
   }
   
   h1 {
@@ -46,7 +47,7 @@
   }
   
   textarea {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     border: 1px solid var(--grey);
     border-radius: 4px;
@@ -121,5 +122,30 @@
   .alert.success {
     background-color: var(--light-blue);
     color: var(--black);
+  }
+  
+  /* Responsive Design */
+  
+  @media only screen and (max-width: 600px) {
+    .container {
+      padding: 0 10px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    textarea {
+      font-size: 14px;
+    }
+  
+    .button {
+      font-size: 14px;
+    }
+  
+    #mapping-table th,
+    #mapping-table td {
+      padding: 6px;
+    }
   }
   
