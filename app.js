@@ -54,7 +54,7 @@ $(document).ready(function() {
       replaceMap[substring] = randomString;
   
       var replaceItem = $('<div class="replace-item"></div>');
-      replaceItem.html('<strong>' + substring + '</strong>: ' + randomString + ' <button class="copy-btn">Copy</button>');
+      replaceItem.html('<strong>' + substring + '</strong>: ' + randomString);
       replaceItem.data('substring', substring);
       $('#replace-list').append(replaceItem);
     }
@@ -96,8 +96,7 @@ $(document).ready(function() {
         var randomString = replaceMap[substring];
         var tableRow = $('<tr></tr>');
         tableRow.append('<td class="substring">' + substring + '</td>');
-        tableRow.append('<td class="random-string">' + randomString + '</td>');
-        tableRow.append('<td><button class="copy-btn">Copy</button></td>');
+        tableRow.append('<td class="random-string">' + randomString + '</td>');        
         tableBody.append(tableRow);
       }
     }
